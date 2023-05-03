@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -54,25 +56,60 @@ export default function Home() {
             >
               IMG
             </div>
-            <div className={"text-center text-[18px] font-[600]"}>
+            <div className={"text-center text-[18px] font-[600] pt-[38px]"}>
               청결 테스트
             </div>
+            <div className={"pt-4 text-[16px] font-[200] text-center"}>
+              <div>자랑처럼 새워 별 봅니다.</div>
+              <div>경, 슬퍼하는 가득 버리었습니다.</div>
+            </div>
           </div>
-          <div
-            className={
-              "w-[360px] h-[200px] bg-[lightgray] flex items-center justify-center"
-            }
-          >
-            IMG
+          <div className={"w-[360px]"}>
+            <div
+              className={
+                "h-[200px] bg-[lightgray] flex items-center justify-center"
+              }
+            >
+              IMG
+            </div>
+            <div className={"text-center text-[18px] font-[600] pt-[38px]"}>
+              깨끗한 기름
+            </div>
+            <div className={"pt-4 text-[16px] font-[200] text-center"}>
+              <div>자랑처럼 새워 별 봅니다.</div>
+              <div>경, 슬퍼하는 가득 버리었습니다.</div>
+            </div>
           </div>
-          <div
-            className={
-              "w-[360px] h-[200px] bg-[lightgray] flex items-center justify-center"
-            }
-          >
-            IMG
+          <div className={"w-[360px]"}>
+            <div
+              className={
+                "h-[200px] bg-[lightgray] flex items-center justify-center"
+              }
+            >
+              IMG
+            </div>
+            <div className={"text-center text-[18px] font-[600] pt-[38px]"}>
+              당일생산, 당일판매
+            </div>
+            <div className={"pt-4 text-[16px] font-[200] text-center"}>
+              <div>자랑처럼 새워 별 봅니다.</div>
+              <div>경, 슬퍼하는 가득 버리었습니다.</div>
+            </div>
           </div>
         </div>
+      </div>
+      <div className={"h-[320px] w-screen opacity-80"}>
+        <Image
+          className={"object-cover"}
+          src={"images/main_img_01_pc.svg"}
+          alt={""}
+          width={100}
+          height={100}
+          style={{
+            width: "100%",
+            height: "320px",
+          }}
+        />
       </div>
     </>
   );
