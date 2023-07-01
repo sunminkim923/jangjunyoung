@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import ReactPlayer from "react-player";
 import YouTube from "react-youtube";
 
 export default function Home() {
@@ -8,8 +7,10 @@ export default function Home() {
     <>
       <div className={"h-20 flex items-center"}>
         <div className={"text-[24px] pl-[240px]"}>
-          <span className={"font-[200]"}>JangJunYoung</span>
-          <span className={"text-[#4A0D00] font-bold pl-2"}>닭강정</span>
+          <span className={"main_title text-3xl"}>JangJunYoung</span>
+          <span className={"text-[#4A0D00] font-[800] pl-2 text-3xl"}>
+            닭강정
+          </span>
         </div>
       </div>
       <div className={"h-[1px] border border-[#E9E9E9]"} />
