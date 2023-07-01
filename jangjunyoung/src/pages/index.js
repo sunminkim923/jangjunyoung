@@ -1,4 +1,7 @@
 import Image from "next/image";
+import React from "react";
+import ReactPlayer from "react-player";
+import YouTube from "react-youtube";
 
 export default function Home() {
   return (
@@ -23,82 +26,78 @@ export default function Home() {
             <span className={"font-bold pl-2"}>정직하게 만듭니다</span>
           </div>
           <div className={"text-[14px] font-[200] pt-6"}>
-            <div>자랑처럼 새워 별 봅니다. 마리아 없이 새겨지는 봅니다.</div>
-            <div>
-              경, 슬퍼하는 가득 버리었습니다. 않은 이런 별에도 속의 못 덮어
-              걱정도 있습니다.
-            </div>
+            <div>매일 매일 새 기름으로 가족이 먹는다는 마음으로 만듭니다.</div>
+            <div>당일 생산, 당일 판매를 원칙으로 부끄럼 없이 만들겠습니다.</div>
           </div>
         </div>
-        <div
-          className={
-            "w-[360px] h-[200px] bg-[lightgray] flex items-center justify-center"
-          }
-        >
-          IMG
-        </div>
+        <Image
+          src={"/images/DSC_2293.jpg"}
+          alt={""}
+          width={700}
+          height={200}
+          prioriy={true}
+        />
       </div>
       <div
         className={
           "h-[720px] bg-[white] flex flex-col items-center text-[#000000]"
         }
       >
-        <div className={"text-[32px] font-[600] pt-[103px]"}>타이틀</div>
-        <div className={"text-[16px] font-[200] pt-[24px]"}>
-          자랑처럼 새워 별 봅니다. 마리아 없이 새겨지는 봅니다.
+        <div className={"text-[32px] font-[600] pt-[103px]"}>
+          장준영 닭강정 메뉴
         </div>
-        <div className={"pt-[80px] flex w-[1196px] justify-between"}>
-          <div className={"w-[360px]"}>
-            <div
-              className={
-                "h-[200px] bg-[lightgray] flex items-center justify-center"
-              }
-            >
-              IMG
-            </div>
+        <div className={"text-[16px] font-[200] pt-[24px]"}>
+          다양한 입맛에 맞게 메뉴가 준비되어 있습니다.
+        </div>
+        <div className={"pt-[80px] flex w-[1400px] justify-between"}>
+          <div className={"w-[400px]"}>
+            <Image
+              src={"/images/DSC_2348.jpg"}
+              alt={""}
+              width={400}
+              height={200}
+            />
             <div className={"text-center text-[18px] font-[600] pt-[38px]"}>
-              청결 테스트
+              양념 닭강정
             </div>
             <div className={"pt-4 text-[16px] font-[200] text-center"}>
-              <div>자랑처럼 새워 별 봅니다.</div>
-              <div>경, 슬퍼하는 가득 버리었습니다.</div>
+              <div>달콤한 양념 닭강정</div>
+              <div>어른도, 아이도 모두 좋아할 대표메뉴</div>
             </div>
           </div>
-          <div className={"w-[360px]"}>
-            <div
-              className={
-                "h-[200px] bg-[lightgray] flex items-center justify-center"
-              }
-            >
-              IMG
-            </div>
+          <div className={"w-[400px]"}>
+            <Image
+              src={"/images/DSC_2309.jpg"}
+              alt={""}
+              width={400}
+              height={200}
+            />
             <div className={"text-center text-[18px] font-[600] pt-[38px]"}>
-              깨끗한 기름
+              후라이드 닭강정
             </div>
             <div className={"pt-4 text-[16px] font-[200] text-center"}>
-              <div>자랑처럼 새워 별 봅니다.</div>
-              <div>경, 슬퍼하는 가득 버리었습니다.</div>
+              <div>담백하고 바삭한 후라이드 닭강정</div>
+              <div>매일 새 기름으로 준비한 담백한 닭강정</div>
             </div>
           </div>
-          <div className={"w-[360px]"}>
-            <div
-              className={
-                "h-[200px] bg-[lightgray] flex items-center justify-center"
-              }
-            >
-              IMG
-            </div>
+          <div className={"w-[400px]"}>
+            <Image
+              src={"/images/DSC_2276.jpg"}
+              alt={""}
+              width={400}
+              height={200}
+            />
             <div className={"text-center text-[18px] font-[600] pt-[38px]"}>
-              당일생산, 당일판매
+              고구마 맛탕
             </div>
             <div className={"pt-4 text-[16px] font-[200] text-center"}>
-              <div>자랑처럼 새워 별 봅니다.</div>
-              <div>경, 슬퍼하는 가득 버리었습니다.</div>
+              <div>장준영 닭강정의 시그니처 메뉴</div>
+              <div>밥 반찬으로도, 간식으로도 손색없는 달달한 고구마 맛탕</div>
             </div>
           </div>
         </div>
       </div>
-      <div className={"h-[320px] w-screen opacity-100"}>
+      <div className={"h-[320px] w-screen opacity-100 mt-10"}>
         <div
           className={
             "h-[320px] w-screen absolute z-20 text-[white] flex justify-center items-center text-[40px] font-[200]"
@@ -121,22 +120,40 @@ export default function Home() {
           }}
         />
       </div>
+      <div
+        className={"h-[720px] bg-amber-100 flex justify-center items-center"}
+      >
+        <YouTube
+          videoId={"FVzLj_N_88E"}
+          opts={{
+            width: "1200",
+            height: "600",
+            playerVars: {
+              autoplay: 1,
+              rel: 0,
+              modestbranding: 1,
+            },
+          }}
+        />
+      </div>
       <div className={"h-[720px] flex items-center justify-evenly"}>
         <div>
           <div className={"text-[32px] font-[600]"}>오시는길</div>
           <div className={"text-[16px] font-[200] pt-5"}>
-            <div>자랑처럼 새워 별 봅니다. 마리아 없이 새겨지는 봅니다.</div>
-            <div>경, 슬퍼하는 가득 버리었습니다.</div>
-            <div>않은 이런 별에도 속의 못 덮어 걱정도 있습니다.</div>
+            <div>인천 부평구 주부토로22번길 12 . 1층</div>
+            <div className={"pt-2"}>동서약국 맞은편</div>
           </div>
         </div>
-        <div
-          className={
-            "w-[360px] h-[200px] bg-[lightgray] flex items-center justify-center"
-          }
-        >
-          IMG
-        </div>
+        <Image
+          className={"cursor-pointer"}
+          onClick={() => {
+            window.location.href =
+              "https://map.naver.com/v5/entry/place/1640451008?c=17.66,0,0,0,dh";
+          }}
+          src={"/images/jangjunyoung_map.png"}
+          width={800}
+          height={300}
+        />
       </div>
       <div
         className={"h-[200px] bg-[#cccccc] flex items-center justify-center"}
