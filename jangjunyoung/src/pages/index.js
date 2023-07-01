@@ -32,6 +32,7 @@ export default function Home() {
           </div>
         </div>
         <Image
+          className={"shadow-2xl shadow-gray-950"}
           src={"/images/DSC_2293.jpg"}
           alt={""}
           width={700}
@@ -53,6 +54,7 @@ export default function Home() {
         <div className={"pt-[80px] flex w-[1400px] justify-between"}>
           <div className={"w-[400px]"}>
             <Image
+              className={"shadow-2xl shadow-gray-800"}
               src={"/images/DSC_2348.jpg"}
               alt={""}
               width={400}
@@ -68,6 +70,7 @@ export default function Home() {
           </div>
           <div className={"w-[400px]"}>
             <Image
+              className={"shadow-2xl shadow-gray-800"}
               src={"/images/DSC_2309.jpg"}
               alt={""}
               width={400}
@@ -83,6 +86,7 @@ export default function Home() {
           </div>
           <div className={"w-[400px]"}>
             <Image
+              className={"shadow-2xl shadow-gray-800"}
               src={"/images/DSC_2276.jpg"}
               alt={""}
               width={400}
@@ -146,7 +150,7 @@ export default function Home() {
           </div>
         </div>
         <Image
-          className={"cursor-pointer"}
+          className={"cursor-pointer border shadow-2xl shadow-gray-700"}
           onClick={() => {
             window.location.href =
               "https://map.naver.com/v5/entry/place/1640451008?c=17.66,0,0,0,dh";
