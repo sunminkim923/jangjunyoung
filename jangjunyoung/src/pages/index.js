@@ -32,7 +32,6 @@ export default function Home() {
           </div>
         </div>
         <Image
-          className={"shadow-2xl shadow-gray-950"}
           src={"/images/DSC_2293.jpg"}
           alt={""}
           width={700}
@@ -54,7 +53,6 @@ export default function Home() {
         <div className={"pt-[80px] flex w-[1400px] justify-between"}>
           <div className={"w-[400px]"}>
             <Image
-              className={"shadow-2xl shadow-gray-800"}
               src={"/images/DSC_2348.jpg"}
               alt={""}
               width={400}
@@ -70,7 +68,6 @@ export default function Home() {
           </div>
           <div className={"w-[400px]"}>
             <Image
-              className={"shadow-2xl shadow-gray-800"}
               src={"/images/DSC_2309.jpg"}
               alt={""}
               width={400}
@@ -86,7 +83,6 @@ export default function Home() {
           </div>
           <div className={"w-[400px]"}>
             <Image
-              className={"shadow-2xl shadow-gray-800"}
               src={"/images/DSC_2276.jpg"}
               alt={""}
               width={400}
@@ -126,13 +122,15 @@ export default function Home() {
         />
       </div>
       <div
-        className={"h-[720px] bg-amber-100 flex justify-center items-center"}
+        className={
+          "h-[800px] bg-[#F9FAFC] border-b flex justify-center items-center"
+        }
       >
         <YouTube
           videoId={"FVzLj_N_88E"}
           opts={{
             width: "1200",
-            height: "600",
+            height: "650",
             playerVars: {
               autoplay: 1,
               rel: 0,
@@ -145,25 +143,34 @@ export default function Home() {
         <div>
           <div className={"text-[32px] font-[600]"}>오시는길</div>
           <div className={"text-[16px] font-[200] pt-5"}>
-            <div>인천 부평구 주부토로22번길 12 . 1층</div>
+            <div>인천 부평구 주부토로 22번길 12 . 1층</div>
             <div className={"pt-2"}>동서약국 맞은편</div>
           </div>
         </div>
         <Image
-          className={"cursor-pointer border shadow-2xl shadow-gray-700"}
+          className={"cursor-pointer border"}
           onClick={() => {
             window.location.href =
               "https://map.naver.com/v5/entry/place/1640451008?c=17.66,0,0,0,dh";
           }}
           src={"/images/jangjunyoung_map.png"}
           width={800}
-          height={300}
+          height={400}
         />
       </div>
+
       <div
-        className={"h-[200px] bg-[#cccccc] flex items-center justify-center"}
+        className={
+          "h-[220px] bg-[#1E1E1E] flex text-[#FFFFFF] flex flex-col justify-center items-center text-lg"
+        }
       >
-        Footer. 들어갈 정보. (주소, 사업자번호, 대표자, 연락처 등)
+        <div className={""}>상호명 : 장준영닭강정</div>
+        <div className={"pt-2"}>대표자 : 장준영</div>
+        <div className={"pt-2"}>주소 : 인천 부평구 주부토로 22번길 12, 1층</div>
+        <div className={"pt-2"}>예약 ・ 문의 : 0507-1325-2181 </div>
+        <div className={"pt-4 text-sm"}>
+          Copyright 2023. JangJunYoung all rights reserved.
+        </div>
       </div>
     </>
   );
