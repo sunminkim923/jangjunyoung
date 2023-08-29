@@ -23,50 +23,6 @@
   font-style: normal;
 }
 
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 200;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream2.otf") format("off");*/
-/*}*/
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 300;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream3.otf") format("off");*/
-/*}*/
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 400;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream4.otf") format("off");*/
-/*}*/
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 500;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream5.otf") format("off");*/
-/*}*/
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 600;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream6.otf") format("off");*/
-/*}*/
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 700;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream7.otf") format("off");*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: "SCDream";*/
-/*  font-weight: 800;*/
-/*  font-style: normal;*/
-/*  src: src("/fonts/SCDream8.otf") format("off");*/
-/*}*/
-
 body {
   font-family: "S-CoreDream-3Light", sans-serif;
 }
@@ -76,20 +32,8 @@ body {
   font-weight: 400;
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  :root {*/
-/*    --foreground-rgb: 255, 255, 255;*/
-/*    --background-start-rgb: 0, 0, 0;*/
-/*    --background-end-rgb: 0, 0, 0;*/
-/*  }*/
-/*}*/
+.section02_img {
+}
 
-/*body {*/
-/*  color: rgb(var(--foreground-rgb));*/
-/*  background: linear-gradient(*/
-/*      to bottom,*/
-/*      transparent,*/
-/*      rgb(var(--background-end-rgb))*/
-/*    )*/
-/*    rgb(var(--background-start-rgb));*/
-/*}*/
+@media (max-width: 768px) {
+}
