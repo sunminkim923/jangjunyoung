@@ -28,7 +28,7 @@ export default function Home() {
           <div className={"max-h-[720px] w-full"}>
             <Image
               style={{ width: "100%", objectFit: "cover", maxHeight: "720px" }}
-              src={"/images/image01_pc.png"}
+              src={"/images/image01_v2_pc.png"}
               alt={""}
               width={1920}
               height={720}
@@ -86,7 +86,7 @@ export default function Home() {
                 objectFit: "contain",
                 maxHeight: "560px",
               }}
-              src={"/images/image04_pc.png"}
+              src={"/images/image04_v2_pc.png"}
               alt={""}
               width={560}
               height={560}
@@ -118,7 +118,7 @@ export default function Home() {
               <div>상호명 : 장준영 닭강정</div>
               <div>대표자 : 장준영</div>
               <div>주소 : 인천 부편구 주부토로 22번길 12, 1층</div>
-              <div>예약/문의 : 02-511-0339</div>
+              <div>예약/문의 : 032-501-0339</div>
             </div>
             <div className={"text-[12px] py-[24px]"}>
               copyright2023. Jangjunyoung All right reserved.
@@ -140,7 +140,7 @@ export default function Home() {
           <div className={"max-h-[640px] w-full"}>
             <Image
               style={{ width: "100%", objectFit: "cover", maxHeight: "640px" }}
-              src={"/images/image01_mo.png"}
+              src={"/images/image01_v2_mo.png"}
               alt={""}
               width={360}
               height={640}
@@ -199,7 +199,7 @@ export default function Home() {
                 objectFit: "contain",
                 maxHeight: "285px",
               }}
-              src={"/images/image04_mo.png"}
+              src={"/images/image04_v2_mo.png"}
               alt={""}
               width={320}
               height={285}
@@ -236,7 +236,7 @@ export default function Home() {
               <div>상호명 : 장준영 닭강정</div>
               <div>대표자 : 장준영</div>
               <div>주소 : 인천 부편구 주부토로 22번길 12, 1층</div>
-              <div>예약/문의 : 02-511-0339</div>
+              <div>예약/문의 : 032-501-0339</div>
             </div>
             <div className={"text-[12px] pt-[40px]"}>
               copyright2023. Jangjunyoung All right reserved.
